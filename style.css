@@ -1,0 +1,132 @@
+
+body.light {
+  background-color: #f9f9f9;
+  color: #222;
+  font-family: Arial, sans-serif;
+  transition: background 0.3s, color 0.3s;
+}
+
+body.dark {
+  background-color: #121212;
+  color: #eee;
+  transition: background 0.3s, color 0.3s;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+form {
+  width: 500px;               
+  margin: 30px auto;          
+  background: white;
+  padding: 30px 40px;         
+  border-radius: 12px;
+  box-shadow: 0px 6px 12px rgba(0,0,0,0.15);
+}
+
+body.dark form {
+  background: #1e1e1e;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input {
+  width: 90%;
+  padding: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  transition: border 0.2s;
+}
+
+input:focus {
+  border-color: #0077ff;
+  outline: none;
+}
+
+button {
+  margin: 10px;
+  font-size: 16px;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+button[type="submit"] {
+  background: #0077ff;
+  color: white;
+}
+
+button[type="submit"]:hover {
+  background: #005fcc;
+}
+
+#themeBtn {
+  background: #ddd;
+  margin: 10px;
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  padding: 10px 18px;   
+  font-size: 15px; 
+}
+#resetBtn {
+  background: #ddd;
+  margin: 10px;
+  position: absolute;
+  bottom: 10px;
+  right: 15px;
+  padding: 10px 18px;   
+  font-size: 15px; 
+}
+
+#themeBtn:hover, #resetBtn:hover {
+  background: #bbb;
+}
+
+body.dark #themeBtn, 
+body.dark #resetBtn {
+  background: #333;
+  color: #fff;
+}
+
+body.dark #themeBtn:hover, 
+body.dark #resetBtn:hover {
+  background: #555;
+}
+
+#message {
+  text-align: center;
+  font-size: 14px;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+#outer {
+  border: 2px solid blue;
+  padding: 15px;
+  margin: 20px auto;  
+  width: 350px;      
+  display: none; 
+ 
+}
+
+#log {
+  margin-top: 20px;
+  padding: 10px;
+  border: 1px solid gray;
+  min-height: 50px;
+  width: 350px;  
+  margin-left: auto;
+  margin-right: auto;
+  display: none; 
+}
